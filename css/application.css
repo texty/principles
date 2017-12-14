@@ -381,7 +381,8 @@ body {
   margin-bottom: 200px; }
 
 a {
-  color: inherit !important; }
+  border-bottom: dashed 1px;
+  margin-right: 5%; }
 
 a:link {
   text-decoration: none !important; }
@@ -400,8 +401,9 @@ h2 {
 
 p, li {
   margin-left: 5%;
-  font-size: 1.3rem;
-  line-height: 2rem; }
+  margin-right: 5%;
+  font-size: 1.4rem;
+  line-height: 2.3rem; }
 
 .p1 {
   font-size: 1.6rem !important;

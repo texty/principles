@@ -122,7 +122,9 @@ img {
 
 
   a {
-    color: inherit !important;
+    border-bottom: dashed 1px;
+
+    margin-right: 5%;
   }
 
   a:link {
@@ -151,10 +153,10 @@ img {
 
   p, li {
     margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.4rem ;
+    line-height: 2.3rem ;
 
-    font-size: 1.3rem ;
-    line-height: 2rem ;
-    //margin-left: 5%;
   }
 
   .p1 {
