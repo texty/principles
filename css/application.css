@@ -381,8 +381,7 @@ body {
   margin-bottom: 200px; }
 
 a {
-  border-bottom: dashed 1px;
-  margin-right: 5%; }
+  border-bottom: dashed 1px; }
 
 a:link {
   text-decoration: none !important; }
