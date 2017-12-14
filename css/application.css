@@ -374,7 +374,7 @@ html {
   position: relative;
   min-height: 100%; }
 
-a {
+.dash {
   border-bottom: dashed 1px; }
 
 a:link {
