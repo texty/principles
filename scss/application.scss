@@ -1,0 +1,179 @@
+@import "base/variables";
+@import "base/mixins";
+@import "base/base";
+@import "components/header";
+@import "components/footer";
+@import "components/weirdo";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 !important;
+  overflow-x: hidden;
+  font-size: 100% !important;
+  font-family: Open Sans, sans-serif !important;
+  @media #{$brk-iphone} {
+    margin-right: 5% !important;
+  }
+}
+
+
+
+/*-----------------------------------
+------------- Title ---------------*/
+
+table {
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+  vertical-align: middle;
+
+    @media #{$brk-xlarge} {
+      font-size: 6rem;
+      line-height: 6.2rem;
+    }
+
+    @media #{$brk-large} {
+      font-size: 6rem;
+      line-height: 6.2rem;
+    }
+
+    @media #{$brk-medium} {
+      font-size: 6rem;
+      line-height: 6.2rem;
+    }
+
+    @media #{$brk-narrow} {
+    font-size: 5.5rem;
+    line-height: 6.0rem;
+    }
+
+    @media #{$brk-spnarrow} {
+      font-size: 4rem;
+      line-height: 4.3rem;
+    }
+
+    @media #{$brk-iphone} {
+      font-size: 3rem;
+      line-height: 3.3rem;
+    }
+    
+  }
+
+
+
+table tr th:nth-child(1) {
+  font-size: 15rem!important;
+  @media #{$brk-xlarge} {
+    font-size: 15rem!important;  }
+
+  @media #{$brk-large} {
+    font-size: 15rem!important;  }
+
+  @media #{$brk-medium} {
+    font-size: 15rem!important;  }
+
+  @media #{$brk-narrow} {
+    font-size: 14rem!important;  }
+
+  @media #{$brk-spnarrow} {
+    font-size: 10rem!important;  }
+
+  @media #{$brk-iphone} {
+    font-size: 8rem!important;  }
+
+}
+
+
+
+
+  /* --------------------------------------
+  ------------------- Images ---------------*/
+img {
+  width: 50%;
+  margin-left: 5%;
+}
+
+  /* --------------------------------------
+  -------------------Text ---------------*/
+
+ caption, .header {
+    //margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+
+  body {
+    color: #383e47;
+    width: 100%;
+    margin-bottom: 200px;
+  }
+
+
+
+  a {
+    color: inherit !important;
+  }
+
+  a:link {
+    text-decoration: none !important;
+  }
+
+  a:hover {
+    color: #FAA61A !important;
+  }
+
+  a.dotted {
+    /*for links*/
+    color: #4b444d !important;
+  }
+
+
+
+
+  h2 {
+    font-size: 1.5rem !important;
+    line-height: 1.8rem !important;
+    font-weight: bold !important;
+    //margin-left: 5%;
+
+  }
+
+  p, li {
+    margin-left: 5%;
+
+    font-size: 1.3rem ;
+    line-height: 2rem ;
+    //margin-left: 5%;
+  }
+
+  .p1 {
+    font-size: 1.6rem !important;
+    line-height: 2rem !important;
+  }
+
+  .last {
+    margin-bottom: 150px;
+  }
+
+
+  .description {
+    font-size: 1.5em;
+    text-align: right;
+    font-style: italic;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+
+
