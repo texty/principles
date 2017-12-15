@@ -110,10 +110,39 @@ body {
   /* --------------------------------------
   ------------------- Images ---------------*/
 .gif {
-  //height: 50vh;
-  width: 95%;
-  margin-left: 5%;
-  //margin-left: 5%;
+
+  @media #{$brk-xlarge} {
+    margin-left: 5%;
+    width: 95%;
+  }
+
+  @media #{$brk-large} {
+    margin-left: 5%;
+    width: 95%;
+  }
+
+  @media #{$brk-medium} {
+    margin-left: 5%;
+    width: 95%;
+  }
+
+  @media #{$brk-narrow} {
+    margin-left: 5%;
+    width: 95%;
+
+  }
+
+  @media #{$brk-spnarrow} {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+  @media #{$brk-iphone} {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+
 }
 
   /* --------------------------------------
