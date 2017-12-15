@@ -302,9 +302,6 @@ body {
     body {
       margin-right: 5% !important; } }
 
-section {
-  height: 100vh; }
-
 /*-----------------------------------
 ------------- Title ---------------*/
 #table {
@@ -356,6 +353,9 @@ section {
   @media (max-width: 374px) {
     #table tr th:nth-child(1) {
       font-size: 8rem !important; } }
+
+.table2 {
+  position: relative; }
 
 .table2 tr th:nth-child(1) {
   width: 30%; }
