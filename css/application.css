@@ -306,20 +306,20 @@ body {
 ------------- Title ---------------*/
 #table {
   margin-top: 40vh;
-  margin-bottom: 50vh;
+  margin-bottom: 45vh;
   vertical-align: middle; }
   @media (max-width: 2570px) {
     #table {
-      font-size: 6rem;
-      line-height: 6.2rem; } }
+      font-size: 12vh;
+      line-height: 13vh; } }
   @media (max-width: 1440px) {
     #table {
-      font-size: 6rem;
-      line-height: 6.2rem; } }
+      font-size: 12vh;
+      line-height: 13vh; } }
   @media (max-width: 1285px) {
     #table {
-      font-size: 6rem;
-      line-height: 6.2rem; } }
+      font-size: 12vh;
+      line-height: 13vh; } }
   @media (max-width: 1024px) {
     #table {
       font-size: 5.5rem;
@@ -334,16 +334,16 @@ body {
       line-height: 3.3rem; } }
 
 #table tr th:nth-child(1) {
-  font-size: 15rem !important; }
+  font-size: 10vh !important; }
   @media (max-width: 2570px) {
     #table tr th:nth-child(1) {
-      font-size: 15rem !important; } }
+      font-size: 30vh !important; } }
   @media (max-width: 1440px) {
     #table tr th:nth-child(1) {
-      font-size: 15rem !important; } }
+      font-size: 30vh !important; } }
   @media (max-width: 1285px) {
     #table tr th:nth-child(1) {
-      font-size: 15rem !important; } }
+      font-size: 30vh !important; } }
   @media (max-width: 1024px) {
     #table tr th:nth-child(1) {
       font-size: 14rem !important; } }

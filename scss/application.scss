@@ -29,22 +29,22 @@ body {
 
 #table {
   margin-top: 40vh;
-  margin-bottom: 50vh;
+  margin-bottom: 45vh;
   vertical-align: middle;
 
     @media #{$brk-xlarge} {
-      font-size: 6rem;
-      line-height: 6.2rem;
+      font-size: 12vh;
+      line-height: 13vh;
     }
 
     @media #{$brk-large} {
-      font-size: 6rem;
-      line-height: 6.2rem;
+      font-size: 12vh;
+      line-height: 13vh;
     }
 
     @media #{$brk-medium} {
-      font-size: 6rem;
-      line-height: 6.2rem;
+      font-size: 12vh;
+      line-height: 13vh;
     }
 
     @media #{$brk-narrow} {
@@ -67,15 +67,15 @@ body {
 
 
 #table tr th:nth-child(1) {
-  font-size: 15rem!important;
+  font-size: 10vh!important;
   @media #{$brk-xlarge} {
-    font-size: 15rem!important;  }
+    font-size: 30vh!important;  }
 
   @media #{$brk-large} {
-    font-size: 15rem!important;  }
+    font-size: 30vh!important;  }
 
   @media #{$brk-medium} {
-    font-size: 15rem!important;  }
+    font-size: 30vh!important;  }
 
   @media #{$brk-narrow} {
     font-size: 14rem!important;  }
