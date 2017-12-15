@@ -302,63 +302,74 @@ body {
     body {
       margin-right: 5% !important; } }
 
+section {
+  height: 100vh; }
+
 /*-----------------------------------
 ------------- Title ---------------*/
-table {
-  margin-top: 20vh;
-  margin-bottom: 20vh;
+#table {
+  margin-top: 40vh;
+  margin-bottom: 50vh;
   vertical-align: middle; }
   @media (max-width: 2570px) {
-    table {
+    #table {
       font-size: 6rem;
       line-height: 6.2rem; } }
   @media (max-width: 1440px) {
-    table {
+    #table {
       font-size: 6rem;
       line-height: 6.2rem; } }
   @media (max-width: 1285px) {
-    table {
+    #table {
       font-size: 6rem;
       line-height: 6.2rem; } }
   @media (max-width: 1024px) {
-    table {
+    #table {
       font-size: 5.5rem;
       line-height: 6.0rem; } }
   @media (max-width: 767px) {
-    table {
+    #table {
       font-size: 4rem;
       line-height: 4.3rem; } }
   @media (max-width: 374px) {
-    table {
+    #table {
       font-size: 3rem;
       line-height: 3.3rem; } }
 
-table tr th:nth-child(1) {
+#table tr th:nth-child(1) {
   font-size: 15rem !important; }
   @media (max-width: 2570px) {
-    table tr th:nth-child(1) {
+    #table tr th:nth-child(1) {
       font-size: 15rem !important; } }
   @media (max-width: 1440px) {
-    table tr th:nth-child(1) {
+    #table tr th:nth-child(1) {
       font-size: 15rem !important; } }
   @media (max-width: 1285px) {
-    table tr th:nth-child(1) {
+    #table tr th:nth-child(1) {
       font-size: 15rem !important; } }
   @media (max-width: 1024px) {
-    table tr th:nth-child(1) {
+    #table tr th:nth-child(1) {
       font-size: 14rem !important; } }
   @media (max-width: 767px) {
-    table tr th:nth-child(1) {
+    #table tr th:nth-child(1) {
       font-size: 10rem !important; } }
   @media (max-width: 374px) {
-    table tr th:nth-child(1) {
+    #table tr th:nth-child(1) {
       font-size: 8rem !important; } }
+
+.table2 tr th:nth-child(1) {
+  width: 30%; }
+
+.table2 tr th {
+  font-size: 2rem !important;
+  line-height: 2.8rem !important;
+  font-weight: bold !important;
+  vertical-align: bottom !important; }
 
 /* --------------------------------------
 ------------------- Images ---------------*/
 img {
-  width: 50%;
-  margin-left: 5%; }
+  width: 100%; }
 
 /* --------------------------------------
 -------------------Text ---------------*/
@@ -388,9 +399,10 @@ a.dotted {
   color: #4b444d !important; }
 
 h2 {
-  font-size: 1.5rem !important;
-  line-height: 1.8rem !important;
-  font-weight: bold !important; }
+  font-size: 2rem !important;
+  line-height: 2.8rem !important;
+  font-weight: bold !important;
+  vertical-align: text-bottom; }
 
 p, li {
   margin-left: 5%;
@@ -403,7 +415,8 @@ p, li {
   line-height: 2rem !important; }
 
 .last {
-  margin-bottom: 150px; }
+  margin-top: 40px;
+  margin-bottom: 250px; }
 
 .description {
   font-size: 1.5em;
