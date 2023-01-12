@@ -1,280 +1,148 @@
-@import "base/variables";
-@import "base/mixins";
-@import "base/base";
+
 @import "components/header";
 @import "components/footer";
 @import "components/weirdo";
 
-* {
-  box-sizing: border-box;
+@font-face { 
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proxima-nova-regular/proxima-nova-regular.eot'), 
+       url('/fonts/proxima-nova-regular/proxima-nova-regular.ttf') format('truetype'), 
+       url('/fonts/proxima-nova-regular/proxima-nova-regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
+@font-face { 
+  font-family: 'Proxima Nova';
+  src: url('/fonts/proxima-nova-bold/proxima-nova-bold.eot'), 
+       url('/fonts/proxima-nova-bold/proxima-nova-bold.ttf') format('truetype'), 
+       url('/fonts/proxima-nova-bold/proxima-nova-bold.svg') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
 
 body {
   margin: 0 !important;
   overflow-x: hidden;
   font-size: 100% !important;
-  font-family: Open Sans, sans-serif !important;
-  @media #{$brk-iphone} {
-    margin-right: 5% !important;
-  }
-}
-
-//section {
-//  height: 100vh;
-//}
-
-
-/*-----------------------------------
-------------- Title ---------------*/
-
-#table {
-
-  vertical-align: middle;
-
-    @media #{$brk-xlarge} {
-      margin-top: 35vh;
-      margin-bottom: 45vh;
-      font-size: 12vh;
-      line-height: 13vh;
-    }
-
-    @media #{$brk-large} {
-      margin-top: 35vh;
-      margin-bottom: 45vh;
-      font-size: 12vh;
-      line-height: 13vh;
-    }
-
-  @media only screen
-  and (min-device-width: 1024px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    margin-top: 20vh!important;
-    margin-bottom: 20vh!important;
-    font-size: 6vh!important;
-    line-height: 6.5vh!important;
-  }
-
-  @media only screen
-  and (min-device-width: 1366px)
-  and (max-device-width: 1366px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    margin-top: 35vh;
-    margin-bottom: 50vh;
-    font-size: 8vh;
-    line-height: 9vh;
-  }
-
-    @media #{$brk-medium} {
-      margin-top: 35vh;
-      margin-bottom: 45vh;
-      font-size: 10vh;
-      line-height: 11vh;
-    }
-
-    @media #{$brk-narrow} {
-    margin-top: 35vh;
-    margin-bottom: 50vh;
-    font-size: 8vh;
-    line-height: 9vh;
-    }
-
-
-
-    @media #{$brk-spnarrow} {
-      margin-top: 20vh;
-      margin-bottom: 20vh;
-      font-size: 4rem;
-      line-height: 4.3rem;
-    }
-
-    @media #{$brk-iphone} {
-      margin-top: 20vh;
-      margin-bottom: 20vh;
-      font-size: 3rem;
-      line-height: 3.3rem;
-    }
-    
-  }
-
-
-
-#table tr th:nth-child(1) {
-  @media #{$brk-xlarge} {
-    font-size: 30vh;  }
-
-  @media #{$brk-large} {
-    font-size: 30vh;  }
-
-  @media only screen
-  and (min-device-width: 1024px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    font-size: 16vh!important;
-  }
-
-  @media only screen
-  and (min-device-width: 1366px)
-  and (max-device-width: 1366px)
-  and (orientation: landscape)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    font-size: 20vh;
-  }
-
-
-  @media #{$brk-medium} {
-    font-size: 30vh;  }
-
-  @media #{$brk-narrow} {
-    font-size: 20vh;  }
-
-  @media #{$brk-spnarrow} {
-    font-size: 10rem;  }
-
-  @media #{$brk-iphone} {
-    font-size: 8rem!important;  }
-
-}
-
-.table2 {
-  position: relative;
-}
-
-.table2 tr th:nth-child(1) {
-  width: 30%;
-}
-
-.table2 tr th {
-  font-size: 2rem !important;
-  line-height: 2.8rem !important;
-  font-weight: bold !important;
-  vertical-align: bottom!important;
-
+  font-family: "Proxima Nova", sans-serif;
 }
 
 
+// title
+.title-container {
+  height: 30vh;
+  display: grid;
+  grid-template-columns: [start] 2fr [logo-start] 15fr [rubrics-start] 55fr [rubrics-end] 2fr [end];
+  @media(max-width: 800px){
+    display: block;
+  }
+}
+
+.note-source {
+  display: grid;
+  grid-template-columns: [start] 2fr [logo-start] 15fr [rubrics-start] 55fr [rubrics-end] 2fr [end];
+
+  p {
+    grid-column: rubrics-start/rubrics-end;
+  }
+}
+
+#title {
+  height: 100%;
+  
+  grid-column-start: rubrics-start;
+  display: flex;
+  @media(max-width: 800px){
+    margin-top: 50px;
+    padding-left: 5%;
+  }
+}
+
+#title h1 {
+  margin: auto 0;
+  font-size: 5vw;
+  font-weight: bold;
+  @media(max-width: 800px){
+    font-size: 40px;
+  }
+}
 
 
-  /* --------------------------------------
-  ------------------- Images ---------------*/
-.gif {
-
-  @media #{$brk-xlarge} {
-    margin-left: 5%;
-    width: 95%;
+//general
+.item-container {
+  display: grid;
+  grid-template-columns: [start] 2fr 
+                          [logo-start] 15fr 
+                          [text-start] 20fr 
+                          [small-gap] 5fr 
+                          [text-end] 15fr 
+                          [image-start] 15fr 
+                          [odd-space] 2fr 
+                          [end];
+  width: 100%;
+  margin-bottom: 50px;
+  @media(max-width: 800px){
+    padding: 0 20px;
+    display: block;
   }
 
-  @media #{$brk-large} {
-    margin-left: 5%;
-    width: 95%;
+
+  h2 { 
+    margin-top:0;
+    font-size: 30px; 
   }
+  h2 span { color: #ed6746; } 
 
-  @media #{$brk-medium} {
-    margin-left: 5%;
-    width: 95%;
-  }
-
-  @media #{$brk-narrow} {
-    margin-left: 5%;
-    width: 95%;
-
-  }
-
-  @media #{$brk-spnarrow} {
-    margin-left: 5%;
-    margin-right: 5%;
+  img {  
+    max-width: 300px; 
     width: 90%;
+    margin: 20px 0;
   }
-  @media #{$brk-iphone} {
-    margin-left: 5%;
-    margin-right: 5%;
+  p {
     width: 90%;
+    font-size: 18px;
   }
-
 }
 
-  /* --------------------------------------
-  -------------------Text ---------------*/
+p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
 
- caption, .header {
-    //margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+.number {
+  font-size: 100px !important;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  stroke: 1px solid black;
+  text-align: right;
+  padding-right: 20px;
+  vertical-align: top;
+  -webkit-text-stroke: 1px gray;
+  margin-top:-20px;
+  @media(max-width: 800px){
+    text-align: left;
   }
-
-  html {
-    position: relative;
-    min-height: 100%;
-  }
-
-
-  a {
+}
 
 
 
-  }
-
-  .dash {
-    border-bottom: dashed 1px;
-  }
-
-  a:link {
-    text-decoration: none !important;
-  }
-
-  a:hover {
-    color: #FAA61A !important;
-  }
-
-  a.dotted {
-    /*for links*/
-    color: #4b444d !important;
-  }
+// odd items
+.left-aligned {
+  .number { grid-column: logo-start/text-start;}
+  h2 { grid-column: text-start/text-end;}
+  img { grid-column: text-end/odd-space; grid-row: 2/3; }  
+  p { grid-column:  text-start/text-end; grid-row: 2/3; }
+}
 
 
-
-
-  h2 {
-    font-size: 2rem !important;
-    line-height: 2.8rem !important;
-    font-weight: bold !important;
-    vertical-align: text-bottom;
-
-  }
-
-  p, li {
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 1.4rem ;
-    line-height: 2.3rem ;
-
-  }
-
-  .p1 {
-    font-size: 1.6rem !important;
-    line-height: 2rem !important;
-  }
-
-  .last {
-    margin-top: 40px;
-    margin-bottom: 250px;
-  }
-
-
-  .description {
-    font-size: 1.5em;
-    text-align: right;
-    font-style: italic;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
+.right-aligned {
+  .number { grid-column: text-start/small-gap; }
+  h2 { grid-column: small-gap/odd-space; }
+  img { grid-column: text-start/small-gap;  }  
+  p { grid-column:  small-gap/odd-space; }
+}
 
 
